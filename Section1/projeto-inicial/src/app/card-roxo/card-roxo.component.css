@@ -1,0 +1,24 @@
+
+.card-roxo {
+    max-width: 350px;
+    background-color: #a577ea;
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+&__plan {
+    font-size: 22px;
+}
+
+&__price {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+&__button {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color: #a05;
+}
