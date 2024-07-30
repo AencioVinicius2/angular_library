@@ -24,6 +24,7 @@
 !.idea/codeStyleSettings.xml
 .project
 .classpath
+.vscode
 .c9/
 *.launch
 .settings/

@@ -6,12 +6,12 @@ import { CardsModule } from './cards/cards.module';
 import { CardButtonComponent } from './card-button/card-button.component';
 import { CardComponent } from './card/card.component';
 import { CardRoxoComponent } from './card-roxo/card-roxo.component';
-import { InlineComponent } from './inline/inline.component';
+//import { InlineComponent } from './inline/inline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InlineComponent,
+    //InlineComponent,
   ],
   imports: [
     BrowserModule,
