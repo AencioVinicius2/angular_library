@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  title = "projeto-component"
+  tipo = 'Simples';
+  preco = 100;
+
+  // getFullPrice() {
+  //   setTimeout(() => {
+  //     console.log('Set TimeOut ');
+  //     this.tipo = 'Teste';
+  //   }, 4000)
+  //   return "R$" + this.preco + ",00/Mês"
+  // }
+  plano = {
+    infos: {
+      tipo: 'Simples',
+      preco: 100, 
+    }
+  }
+
+  // @ts-ignore
+  //tipos:
 }

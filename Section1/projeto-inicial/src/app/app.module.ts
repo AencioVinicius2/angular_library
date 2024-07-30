@@ -2,18 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CardsModule } from './cards/cards.module';
+import { CardButtonComponent } from './card-button/card-button.component';
 import { CardComponent } from './card/card.component';
 import { CardRoxoComponent } from './card-roxo/card-roxo.component';
+import { InlineComponent } from './inline/inline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
-    CardRoxoComponent
+    InlineComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
