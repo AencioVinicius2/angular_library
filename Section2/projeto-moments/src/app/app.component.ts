@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FirstComponentComponent } from "./components/first-component/first-component.component";
-import { ParentDataComponent } from "./component/parent-data/parent-data.component";
+import { ParentDataComponent } from "./components/parent-data/parent-data.component";
 
 @Component({
   selector: 'app-root',
@@ -19,6 +19,10 @@ import { ParentDataComponent } from "./component/parent-data/parent-data.compone
 export class AppComponent {
   userName = 'Joaquim';
 
+  userData = {
+    email: 'joaquim@gmail.com',
+    role: 'Admin',
+  }
 
   title = 'projeto-moments';
 }
