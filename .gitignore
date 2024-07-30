@@ -24,7 +24,6 @@
 !.idea/codeStyleSettings.xml
 .project
 .classpath
-.vscode
 .c9/
 *.launch
 .settings/
@@ -33,6 +32,7 @@ xcuserdata/
 
 # IDE - VSCode
 .vscode/*
+vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
