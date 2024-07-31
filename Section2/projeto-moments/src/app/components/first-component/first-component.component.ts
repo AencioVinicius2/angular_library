@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './first-component.component.html',
   styleUrl: './first-component.component.css'
 })
-export class FirstComponentComponent {
+export class FirstComponentComponent implements OnInit {
   name: string = "Matheus";
   age: number = 30;
   job: string = 'Programador';
@@ -19,9 +19,5 @@ export class FirstComponentComponent {
 
   constructor() {}
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-
-  }
+  ngOnInit(): void {}
 }

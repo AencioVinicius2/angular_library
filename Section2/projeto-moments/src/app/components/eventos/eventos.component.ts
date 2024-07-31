@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './eventos.component.html',
   styleUrl: './eventos.component.css'
 })
-export class EventosComponent {
+export class EventosComponent implements OnInit {
 
   canShow: boolean = true;
 

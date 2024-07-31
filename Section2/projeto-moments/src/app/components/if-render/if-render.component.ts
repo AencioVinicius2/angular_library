@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './if-render.component.html',
   styleUrl: './if-render.component.css'
 })
-export class IfRenderComponent {
+export class IfRenderComponent implements OnInit {
   canShow: boolean = true;
   name: string = 'Matheus'
 
