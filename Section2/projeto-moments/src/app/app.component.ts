@@ -11,6 +11,8 @@ import { ListRenderComponent } from "./components/list-render/list-render.compon
 import { PipesComponent } from "./components/pipes/pipes.component";
 import { TwoWayBindingComponent } from "./components/two-way-binding/two-way-binding.component";
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.modules';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -27,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     PipesComponent,
     TwoWayBindingComponent,
     FormsModule,
+    AppRoutingModule,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
