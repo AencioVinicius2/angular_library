@@ -1,0 +1,10 @@
+.card-button-cancel {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 25px;
+  background-color: red;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+}
