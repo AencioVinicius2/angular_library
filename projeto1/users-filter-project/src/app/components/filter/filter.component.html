@@ -7,6 +7,14 @@
     </div>
 
     <div class="form__date-picker">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Data de Cadastro">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="form__status">
 
     </div>
   </form>
