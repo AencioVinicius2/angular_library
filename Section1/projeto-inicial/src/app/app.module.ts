@@ -11,7 +11,7 @@ import { CardButtonCancelComponent } from './card-button-cancel/card-button-canc
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     //CardButtonCancelComponent,
     //InlineComponent,
   ],
