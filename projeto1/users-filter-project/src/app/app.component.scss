@@ -4,7 +4,7 @@
 }
 
 .left-container {
-  width: 70px;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,16 @@
 
 .top-div {
   flex-grow: 1;
+  background-color: aqua;
 }
 
 .main-left-div {
   height: 80%;
+  background-color: brown;
 }
 
 .right-div {
-  width: 90%;
+  width: 30%;
   max-height: 100vh;
+  background-color: orange;
 }
