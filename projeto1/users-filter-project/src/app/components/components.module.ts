@@ -21,7 +21,8 @@ import { UsersListComponent } from './users-list/users-list.component';
   exports: [
     AngularMaterialModule,
     UserDetailsComponent,
-    FilterComponent
+    FilterComponent,
+    UsersListComponent,
   ]
 })
 export class ComponentsModule { }

@@ -1,0 +1,24 @@
+<div class="users-list">
+  <table mat-table [dataSource]="usersList" class="mat-elevation-z8">
+    <!-- Coluna nome-->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Nome </th>
+      <td mat-cell *matCellDef="let element" class="users-list__item"> {{element.nome}} </td>
+    </ng-container>
+
+    <!-- Coluna data de cadastro -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Data </th>
+      <td mat-cell *matCellDef="let element" class="users-list__item"> {{element.dataCadastro}} </td>
+    </ng-container>
+
+    <!-- Coluna cadastro -->
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let element" class="users-list__item"> {{element.ativo}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
