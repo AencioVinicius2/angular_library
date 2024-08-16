@@ -17,12 +17,11 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Endereço: </span><span>{{user.endereco?.rua}}, {{user.endereco?.numero}}, {{user.endereco?.cidade}},
-        {{user.endereco?.estado}}</span>
+      <span>Endereço: </span><span>{{user.endereco | address }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Ativo: </span><span>{{user.ativo ? "Sim" : "Não"}}</span>
+      <span>Ativo: </span><span>{{user.ativo | active}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
