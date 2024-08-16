@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IUser } from '../../interfaces/user/users.interface';
+import { PhonePipe } from '../../pipes/phone.pipe';
 
 @Component({
   selector: 'app-user-details',
