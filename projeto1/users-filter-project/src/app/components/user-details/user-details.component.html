@@ -5,27 +5,31 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Nome: </span><span>Fulano Da Silva</span>
+      <span>Nome: </span><span> {{user.nome}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Email: </span><span>FulanoDaSilvagmail.com</span>
+      <span>Email: </span><span>{{user.email}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Telefone: </span><span>(11) 9 9234-3454</span>
+      <span>Telefone: </span><span>{{user.telefone}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Endereço: </span><span>Rua das flores, 42, São Paulo - SP</span>
+      <span>Endereço: </span><span>{{user.endereco?.rua}}, {{user.endereco?.numero}}, {{user.endereco?.cidade}},
+        {{user.endereco?.estado}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Ativo: </span><span>Sim</span>
+      <span>Ativo: </span><span>{{user.ativo ? "Sim" : "Não"}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Data de Cadastro: </span><span>20/08/2023</span>
+      <span>Função: </span><span>{{user.funcao}}</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span>Data de Cadastro: </span><span>{{user.dataCadastro}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
