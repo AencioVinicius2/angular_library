@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IUser } from '../../interfaces/user/users.interface';
 
 @Component({
   selector: 'app-user-details',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './user-details.component.scss'
 })
 export class UserDetailsComponent {
+  showUserDetail(user: IUser) {
 
+  }
 }
