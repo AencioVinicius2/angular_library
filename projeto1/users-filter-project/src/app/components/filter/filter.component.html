@@ -10,12 +10,11 @@
       <mat-form-field>
         <mat-label>Data de Cadastro</mat-label>
         <mat-date-range-input [rangePicker]="picker">
-          <input matStartDate placeholder="Start date" [(ngModel)]="filterOptions.startDate"
-            (ngModelChange)="dateSelected($event)" />
-          <input matEndDate placeholder="End date" [(ngModel)]="filterOptions.startDate">
+          <input matStartDate placeholder="Start date" [(ngModel)]="filterOptions.startDate" />
+          <input matEndDate placeholder="End date" [(ngModel)]="filterOptions.endDate" />
         </mat-date-range-input>
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matInconSulffix [for]="picker"></mat-datepicker-toggle>
+        <mat-hint>MM/DD/YYYY - MM/DD/YYYY </mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-date-range-picker #picker></mat-date-range-picker>
       </mat-form-field>
     </div>
