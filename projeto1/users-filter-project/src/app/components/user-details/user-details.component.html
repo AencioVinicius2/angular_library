@@ -5,19 +5,19 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Nome: </span><span> {{user.nome}}</span>
+      <span>Nome: </span><span> {{user.nome | dashIfEmpty}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Email: </span><span>{{user.email}}</span>
+      <span>Email: </span><span>{{user.email | dashIfEmpty}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Telefone: </span><span>{{user.telefone | phone}}</span>
+      <span>Telefone: </span><span>{{user.telefone | phone | dashIfEmpty}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Endereço: </span><span>{{user.endereco | address }}</span>
+      <span>Endereço: </span><span>{{user.endereco | address | dashIfEmpty }}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
@@ -25,10 +25,10 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <mat-list-item>
-      <span>Função: </span><span>{{user.funcao}}</span>
+      <span>Função: </span><span>{{user.funcao | dashIfEmpty}}</span>
     </mat-list-item>
     <mat-list-item>
-      <span>Data de Cadastro: </span><span>{{user.dataCadastro | registrationDate}}</span>
+      <span>Data de Cadastro: </span><span>{{user.dataCadastro | dashIfEmpty | registrationDate}}</span>
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
