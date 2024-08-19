@@ -1,32 +1,38 @@
 <div class="filter">
-  <form class="form">
+  <div class="form">
     <div class="form__name">
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Ex. Fulano Da Silva" value="Fulano">
+        <input matInput placeholder="Ex. Fulano Da Silva" [(ngModel)]="filterOptions.name">
       </mat-form-field>
     </div>
 
     <div class="form__date-picker">
       <mat-form-field>
-        <input matInput [matDatepicker]="picker" placeholder="Data de Cadastro">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+        <mat-label>Data de Cadastro</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date" [(ngModel)]="filterOptions.startDate"
+            (ngModelChange)="dateSelected($event)" />
+          <input matEndDate placeholder="End date" [(ngModel)]="filterOptions.startDate">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matInconSulffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
       </mat-form-field>
     </div>
 
     <div class="form__status">
       <mat-form-field>
         <mat-label>Status</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+        <mat-select [(ngModel)]="filterOptions.status">
+          <mat-option *ngFor="let status of statusList " [value]="status.value">
+            {{ status.description }}
           </mat-option>
         </mat-select>
       </mat-form-field>
     </div>
 
     <div class="form__button">
-      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button color="primary" (click)="onFilter()">Primary</button>
     </div>
-  </form>
+  </div>
 </div>
