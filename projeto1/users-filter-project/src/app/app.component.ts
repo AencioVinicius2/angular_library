@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UsersList } from './data/users-list';
 import { IUser } from './interfaces/user/users.interface';
 import { IFilterOptions } from './interfaces/filter.options.interface';
-import { filter } from 'rxjs';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -36,12 +36,12 @@ export class AppComponent implements OnInit {
 
     filteredList = this.filterUsersListByName(filterOptions.name, usersList);
     filteredList = this.filterUsersLisyByStatus(filterOptions.status, filteredList);
+    filteredList = this.filterUsersByDate(filterOptions.startDate, filterOptions.endDate, filteredList);
     return filteredList;
   }
 
   filterUsersLisyByStatus(status: boolean | undefined, usersList: IUser[]): IUser[] {
     const STATUS_NOT_SELECTED = status === undefined;
-    console.log('status pressionado')
     if(STATUS_NOT_SELECTED) {
       return usersList;
     }
@@ -55,6 +55,16 @@ export class AppComponent implements OnInit {
       return usersList;
     }
     const filteredList = usersList.filter((user) => user.nome.toLowerCase().includes(name.toLowerCase()));
+    return filteredList;
+  }
+
+  filterUsersByDate(startDate: Date | undefined, endDate: Date | undefined, usersList: IUser[]): IUser[] {
+    const DATES_NOT_SELECTED = startDate === undefined || endDate === undefined;
+    if(DATES_NOT_SELECTED) {
+      return usersList;
+    }
+
+    const filteredList = usersList.filter((user) => new Date(user.dataCadastro) >= startDate && new Date(user.dataCadastro) <= endDate);
     return filteredList;
   }
 }

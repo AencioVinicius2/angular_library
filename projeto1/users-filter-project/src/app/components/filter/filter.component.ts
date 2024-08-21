@@ -19,7 +19,7 @@ export class FilterComponent {
   ]
 
   dateSelected(date: Date) {
-    console.log(date.getFullYear())
+    console.log(date.getFullYear(), 'filter')
   }
 
   @Output('onFilter') onFilterEmitt = new EventEmitter<IFilterOptions>();
