@@ -1,0 +1,28 @@
+.card {
+    max-width: 350px;
+    background-color: #fd7557;
+    border-radius: 25px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__plan {
+        font-size: 25px;
+    }
+
+    &__price {
+        font-weight: 16px;
+        font-size: 40px;
+    }
+
+    &__button {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        border-radius: 25px;
+        background-color: white;
+    }
+}
