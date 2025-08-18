@@ -19,3 +19,8 @@
     }
 
 }
+
+::ng-deep .card-cancel-button {
+    background-color: yellow ;
+} //ng-deep é global
+
