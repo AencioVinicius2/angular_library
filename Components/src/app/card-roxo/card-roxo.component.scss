@@ -18,3 +18,8 @@
         font-size: 40px;
     }
 }
+
+::ng-deep .card-cancel-button {
+    background-color: rgb(247, 247, 245) ;
+} //ng-deep é global
+

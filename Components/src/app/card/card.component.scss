@@ -20,7 +20,6 @@
 
 }
 
-::ng-deep .card-cancel-button {
-    background-color: yellow ;
+:host ::ng-deep .card-cancel-button {
+    background-color: yellow !important;
 } //ng-deep é global
-
